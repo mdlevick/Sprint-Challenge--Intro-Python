@@ -26,7 +26,7 @@ cities = []
 from csv import reader
 
 def cityreader(cities=[]):
-  with open('src/cityreader/cities.csv', newline='') as file:
+  with open('cities.csv', newline='') as file:
     city_list = reader(file)
     next(city_list)
     for line in city_list:
